@@ -136,6 +136,7 @@ cc_library_shared {
         "liblisten_headers",
         "libspf-headers",
         "libvui_dmgr_headers",
+        "qti_kernel_headers",
     ] + select(soong_config_variable("qtiaudio", "feature_ar_memlogger"), {
         "true": ["libarmemlog_headers"],
         default: [],
